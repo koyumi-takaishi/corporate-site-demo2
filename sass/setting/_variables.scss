@@ -2,7 +2,7 @@
 // 色
 // ---
 $cr-m: #666; // ベース色
-$cr-bg: #fffffe; // 背景
+$cr-bg: #fff; // 背景
 $cr-txt: #333; // テキスト色
 $cr-table: #eee; // テーブル
 
@@ -17,7 +17,7 @@ $opacity: 0.7; // 透過度
 $ff-awesome: "Font Awesome 5 Free", sans-serif; // Font Awesome用
 $ff-code: monospace, sans-serif; // コード用
 $fz-base: 16px; // ベースフォントサイズ
-$ff-base: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+$ff-base: 'Noto Sans JP', sans-serif,
 	Meiryo, sans-serif; // ベースフォントサイズ
 $fw-base: 400; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

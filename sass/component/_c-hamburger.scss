@@ -1,0 +1,27 @@
+.c-hamburger {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+}
+.c-hamburger:hover {
+  cursor: pointer;
+}
+.c-hamburger span {
+  background: #fff;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+.c-hamburger span:nth-of-type(1) {
+  top: 5px;
+}
+.c-hamburger span:nth-of-type(3) {
+  bottom: 5px;
+}

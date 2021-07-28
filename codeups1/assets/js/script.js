@@ -1,10 +1,22 @@
 // ローディング判定
 jQuery(function ($) {
-jQuery(window).on("load", function() {
-	jQuery("body").attr("data-loading", "true");
-});
+	jQuery(window).on("load", function() {
+		jQuery("body").attr("data-loading", "true");
+	});
 
-jQuery(function() {
+	//ナビバートグル
+	$('.js-hamburger').on('click', function () {
+		if($('.js-hamburger').hasClass('open')){
+			$('.js-drawer-menu').fadeOut();
+			$('.js-overlay').fadeOut();
+			$(this).removeClass('open');
+		} else {
+			$('.js-drawer-menu').fadeIn();
+			$('.js-overlay').fadeIn();
+			$(this).addClass('open');
+		}
+	});
+
 	// スクロール判定
 	jQuery(window).on("scroll", function() {
 		if (100 < jQuery(this).scrollTop()) {
@@ -53,5 +65,4 @@ jQuery(function() {
 				e.preventDefault();
 			});
 	}
-});
 });

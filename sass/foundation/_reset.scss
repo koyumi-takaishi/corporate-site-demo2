@@ -46,6 +46,8 @@ body {
 	overflow-wrap: break-word;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
+	position: relative;
+	z-index: -9999;
 }
 
 article,

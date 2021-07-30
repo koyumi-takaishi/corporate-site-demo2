@@ -28,4 +28,7 @@
   font-weight: 700;
   line-height: (20 / 12);
   letter-spacing: 0.068em;
+  @include mq(tab) {
+    font-size: rem(14);
+  }
 }

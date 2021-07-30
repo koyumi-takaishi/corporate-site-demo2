@@ -423,6 +423,10 @@ select {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-contact {
+	margin-top: 2.5rem;
+}
+
 .l-header {
 	left: 0;
 	padding-top: 1.25rem;
@@ -434,10 +438,10 @@ select {
 .l-inner {
 	height: inherit;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 33.75rem;
 	padding-left: 15px;
 	padding-right: 15px;
-	width: 1000px;
+	width: 100%;
 }
 
 .l-top-about {
@@ -470,6 +474,15 @@ select {
 	padding: 0.6875rem 2.75rem;
 	text-transform: uppercase;
 	text-transform: uppercase;
+}
+
+.c-copy {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.625rem;
+	font-weight: 500;
+	letter-spacing: 0.015em;
+	line-height: 1;
 }
 
 .c-hamburger {
@@ -533,15 +546,7 @@ select {
 	line-height: 2;
 }
 
-.p-about {
-	background: url(./../img/common/top-about.jpg);
-	background-position: center;
-	background-size: cover;
-	position: relative;
-	z-index: -1;
-}
-
-.p-about::after {
+.p-about__inner::after {
 	background-color: rgba(0, 0, 0, 0.16);
 	content: "";
 	height: 100%;
@@ -553,8 +558,15 @@ select {
 }
 
 .p-about__inner {
+	background: url(./../img/common/top-about.jpg);
+	background-position: center;
+	background-size: cover;
+	max-width: 1000px;
 	padding-bottom: 3.125rem;
+	padding-left: 25px;
+	padding-right: 25px;
 	padding-top: 3.125rem;
+	position: relative;
 }
 
 .p-about__content {
@@ -573,6 +585,15 @@ select {
 
 .p-about__btn {
 	margin-top: 1.875rem;
+}
+
+.p-box1__inner {
+	height: inherit;
+	margin: 0 auto;
+	max-width: 33.75rem;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
 }
 
 .p-box1__img {
@@ -785,6 +806,41 @@ select {
 	max-width: 100%;
 }
 
+.p-contact {
+	background-color: #f2f2f2;
+	padding: 2.5rem 0;
+}
+
+.p-contact__img {
+	position: relative;
+	width: 100%;
+}
+
+.p-contact__img::before {
+	content: "";
+	display: block;
+	padding-top: 67.2463%;
+}
+
+.p-contact__img img {
+	-o-object-fit: cover;
+	-o-object-position: center;
+	height: 100%;
+	left: 50%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.p-contact__body,
+.p-contact__text,
+.p-contact__btn {
+	margin-top: 1.875rem;
+}
+
 .p-drawer-menu {
 	background-color: rgba(34, 34, 34, 0.95);
 	display: none;
@@ -816,6 +872,12 @@ select {
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 100%;
+}
+
+.p-footer {
+	background-color: #525252;
+	padding: 1.25rem 0;
+	text-align: center;
 }
 
 .p-header__inner {
@@ -1028,12 +1090,54 @@ html {
 @media screen and (min-width: 768px) {
 
 html {
-	font-size: 1.6vw;
+	font-size: 1.45455vw;
 }
 
 .l-inner {
+	max-width: 1150px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.l-top-about {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7.5rem;
+	max-width: 71.25rem;
+	padding: 0 1.25rem;
+	width: 100%;
+}
+
+.l-top-bgGray {
+	margin-top: -6.25rem;
+	padding-bottom: 3.75rem;
+	padding-top: 11.25rem;
+}
+
+.l-top-bgGray__inner {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 71.25rem;
+	padding: 0 1.25rem;
+}
+
+.l-top-box1:nth-child(2) {
+	margin-left: 3.75rem;
+	margin-top: 0;
+}
+
+.l-top-box1 {
+	max-width: 32.5rem;
+	width: 100%;
+}
+
+.l-topics {
+	margin-top: 3.75rem;
+}
+
+.c-section-title {
+	font-size: 2rem;
 }
 
 .c-test {
@@ -1041,14 +1145,66 @@ html {
 	font-size: 3.125rem;
 }
 
+.p-about__inner {
+	max-width: initial;
+	padding-bottom: 6.875rem;
+	padding-left: 3.125rem;
+	padding-top: 6.875rem;
+}
+
+.p-about__content {
+	margin-right: auto;
+	max-width: 36.875rem;
+	padding: 3.125rem 1.875rem;
+	width: 100%;
+}
+
+.p-about__text {
+	font-size: 1rem;
+}
+
+.p-box1__inner {
+	padding: 0;
+}
+
+.p-mv__block {
+	right: 5rem;
+}
+
+.p-mv__subtitle {
+	font-size: 1.25rem;
+}
+
+.p-mv__subtitle--en {
+	font-size: 1.25rem;
+}
+
+.p-mv__title {
+	font-size: 4.5rem;
+}
+
 .p-test {
 	color: green;
 	font-size: 3.125rem;
 }
 
+.p-topic-info__text {
+	font-size: 0.875rem;
 }
 
-@media (min-width: 1000px) {
+.p-topics__items {
+	margin-left: auto;
+	max-width: 43.75rem;
+	width: 100%;
+}
+
+.p-topics__btn {
+	text-align: right;
+}
+
+}
+
+@media (min-width: 1100px) {
 
 html {
 	font-size: 16px;
@@ -1056,7 +1212,7 @@ html {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
 
 .c-test {
 	color: blue;
@@ -1076,6 +1232,10 @@ html {
 
 .c-test {
 	color: brown;
+}
+
+.p-mv__block {
+	right: 12.125rem;
 }
 
 .p-test {

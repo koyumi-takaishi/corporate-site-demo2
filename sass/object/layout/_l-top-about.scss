@@ -1,3 +1,11 @@
 .l-top-about {
   margin-top: rem(78);
+  @include mq(tab){
+    max-width: rem(1140);
+    padding: 0 rem(20);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(120);
+  }
 }

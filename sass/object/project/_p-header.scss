@@ -1,0 +1,50 @@
+.p-header {
+}
+
+.p-header__inner {
+	padding: 0 rem(15);
+}
+
+.p-header__logo {
+	width: rem(189);
+	height: auto;
+}
+
+.p-header__drawer {
+	position: absolute;
+	right: rem(54);
+	top: rem(20);
+}
+
+.p-header__menuText {
+	position: absolute;
+	right: rem(14);
+	top: rem(20);
+	font-family: $font-family-sub;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: rem(10);
+	color: #fff;
+	z-index: 9999;
+}
+
+.p-header__menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: scroll;
+	padding-bottom: rem(100);
+}
+
+.p-header__overlay {
+	background-color: rgba($color: #222, $alpha: 0.6);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	display: none;
+}

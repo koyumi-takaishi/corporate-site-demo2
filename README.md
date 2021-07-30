@@ -1,14 +1,12 @@
-# gulp-wp-flocss-rem-fromSPの使い方
+# wp-flocss-rem-fromSPの使い方
 
 
-- ThemeNameはテーマ名に変更する
-- 以下の「フォルダ名の書き換えが必要」はThemeNameに合わせる
-	- ThemeName・・・テーマフォルダ（★ **フォルダ名の書き換えが必要**）
+- WordPressThemeは必要に応じて変更してください
+	- WordPressTheme
 	- sass
-	- gulpfile.js・・・★ **テーマフォルダ名の書き換えが必要**
+	- gulpfile.js
 	- package.json
 	- .gitignore
-	- .editorconfig
 	- index.php
 
 ## JSの記述
@@ -22,7 +20,6 @@
 
 ## 使い方
 - npm i でインストール → node_modulesが生成されればOK
-- gulp もしくは npx gulp で起動
-
-
-# codeups-live-1
+- npx gulp で起動
+# wp-flocss-rem-fromSP
+# wp-flocss-rem-fromSP

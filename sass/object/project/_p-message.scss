@@ -1,0 +1,27 @@
+.p-message {
+
+}
+
+.p-message__img {
+  width: rem(340);
+  margin-right: auto;
+}
+
+.p-message__content {
+  margin-top: rem(30);
+}
+
+.p-message__text {
+  font-size: rem(14);
+  line-height: 2;
+}
+
+.p-message__text:nth-child(n + 2) {
+  margin-top: rem(28);
+}
+
+.p-message__wrapper {
+  padding: rem(126) rem(28) rem(80);
+  background-color: #f0f0f0;
+  margin-top: rem(-100);
+}

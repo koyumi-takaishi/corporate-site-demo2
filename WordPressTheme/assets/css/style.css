@@ -423,13 +423,16 @@ select {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+ul {
+	padding: 0;
+}
+
 .l-contact {
 	margin-top: 2.5rem;
 }
 
 .l-header {
 	left: 0;
-	padding-top: 1.25rem;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -444,6 +447,10 @@ select {
 	width: 100%;
 }
 
+.l-message {
+	margin-top: 5rem;
+}
+
 .l-top-about {
 	margin-top: 4.875rem;
 }
@@ -452,6 +459,8 @@ select {
 	background-color: #f0f0f0;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
+	position: relative;
+	z-index: -10;
 }
 
 .l-top-box1:nth-child(2) {
@@ -460,6 +469,10 @@ select {
 
 .l-topics {
 	margin-top: 2.5rem;
+}
+
+.l-vision {
+	margin-top: 5rem;
 }
 
 .c-btn {
@@ -567,6 +580,7 @@ select {
 	padding-right: 25px;
 	padding-top: 3.125rem;
 	position: relative;
+	z-index: -1;
 }
 
 .p-about__content {
@@ -809,6 +823,16 @@ select {
 .p-contact {
 	background-color: #f2f2f2;
 	padding: 2.5rem 0;
+	position: relative;
+	z-index: -2;
+}
+
+.p-contact__wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+	z-index: -1;
 }
 
 .p-contact__img {
@@ -856,6 +880,10 @@ select {
 	padding-top: 11.25rem;
 }
 
+.p-drawer-menu__logo img {
+	display: inline-block;
+}
+
 .p-drawer-menu__items {
 	margin-top: 1.25rem;
 }
@@ -878,6 +906,16 @@ select {
 	background-color: #525252;
 	padding: 1.25rem 0;
 	text-align: center;
+}
+
+.p-header {
+	padding-top: 1.25rem;
+	transition: ease .1s;
+}
+
+.p-header.headerColor {
+	background-color: #000;
+	padding-bottom: 1.25rem;
 }
 
 .p-header__inner {
@@ -926,6 +964,30 @@ select {
 	top: 0;
 	width: 100%;
 	z-index: 99;
+}
+
+.p-message__img {
+	margin-right: auto;
+	width: 21.25rem;
+}
+
+.p-message__content {
+	margin-top: 1.875rem;
+}
+
+.p-message__text {
+	font-size: 0.875rem;
+	line-height: 2;
+}
+
+.p-message__text:nth-child(n + 2) {
+	margin-top: 1.75rem;
+}
+
+.p-message__wrapper {
+	background-color: #f0f0f0;
+	margin-top: -6.25rem;
+	padding: 7.875rem 1.75rem 5rem;
 }
 
 .p-mv {
@@ -1011,6 +1073,80 @@ select {
 	margin-top: 0.625rem;
 }
 
+.p-sub-mv {
+	height: 28.0625rem;
+	position: relative;
+	z-index: -100;
+}
+
+.p-sub-mv::after {
+	background: #222;
+	content: "";
+	height: 28.0625rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 75.5%;
+	z-index: -10;
+}
+
+.p-sub-mv__img {
+	-o-object-fit: cover;
+	-o-object-position: top;
+	content: "";
+	height: 24.1875rem;
+	left: 0;
+	object-fit: cover;
+	object-position: top;
+	position: absolute;
+	top: 0;
+	width: 76.5%;
+	z-index: -9;
+}
+
+.p-sub-mv__img::before {
+	background-color: rgba(0, 0, 0, 0.34);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-sub-mv__img img {
+	-o-object-fit: cover;
+	-o-object-position: top;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	width: 100%;
+}
+
+.p-sub-mv__block {
+	color: #fff;
+	position: absolute;
+	right: 0.625rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.p-sub-mv__subtitle {
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.063em;
+	margin-top: 0.625rem;
+}
+
+.p-sub-mv__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 3.5rem;
+	font-weight: 800;
+	letter-spacing: 0.063em;
+	line-height: 0.94643;
+}
+
 .p-test {
 	color: red;
 	font-size: 1.25rem;
@@ -1054,6 +1190,28 @@ select {
 
 .p-topics__btn {
 	margin-top: 1.875rem;
+}
+
+.p-vision__content {
+	margin-top: 2.3125rem;
+}
+
+.p-vision__box {
+	margin-top: 2.1875rem;
+}
+
+.p-vision__subtitle {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+.p-vision__text {
+	font-size: 0.875rem;
+	line-height: 2;
+}
+
+.p-vision__text:nth-child(n + 2) {
+	margin-top: 1.75rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1167,6 +1325,20 @@ html {
 	padding: 0;
 }
 
+.p-contact {
+	padding: 3.75rem 0 7.5rem;
+}
+
+.p-contact__img {
+	max-width: 36.25rem;
+}
+
+.p-contact__body {
+	margin-right: 5rem;
+	max-width: 27.5rem;
+	width: 100%;
+}
+
 .p-mv__block {
 	right: 5rem;
 }
@@ -1180,6 +1352,18 @@ html {
 }
 
 .p-mv__title {
+	font-size: 4.5rem;
+}
+
+.p-sub-mv__block {
+	right: 5rem;
+}
+
+.p-sub-mv__subtitle {
+	font-size: 1.25rem;
+}
+
+.p-sub-mv__title {
 	font-size: 4.5rem;
 }
 
@@ -1235,6 +1419,10 @@ html {
 }
 
 .p-mv__block {
+	right: 12.125rem;
+}
+
+.p-sub-mv__block {
 	right: 12.125rem;
 }
 

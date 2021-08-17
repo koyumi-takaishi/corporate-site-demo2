@@ -12,7 +12,7 @@
 </head>
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="l-header p-header">
+  <header class="l-header p-header <?php if(is_front_page()){echo 'js-top-header';} else {echo 'js-sub-header';} ?>">
     <div class="p-header__inner">
       <div class="p-header__logo">
         <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/site-logo.svg" alt="タイトルロゴ">
@@ -32,7 +32,7 @@
         </div>
         <ul class="p-drawer-menu__items">
           <li class="p-drawer-menu__item">
-            <a href="">about us</a>
+            <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">about us</a>
           </li>
           <li class="p-drawer-menu__item">
             <a href="">works</a>

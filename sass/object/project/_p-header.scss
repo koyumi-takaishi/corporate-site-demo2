@@ -1,4 +1,11 @@
 .p-header {
+	padding-top: rem(20);
+	transition: ease .1s;
+}
+
+.p-header.headerColor {
+	background-color: #000;
+	padding-bottom: rem(20);
 }
 
 .p-header__inner {

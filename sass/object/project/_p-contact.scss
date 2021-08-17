@@ -1,11 +1,27 @@
 .p-contact {
+  position: relative;
+  z-index: -2;
   padding: rem(40) 0;
   background-color: #f2f2f2;
+  @include mq(tab) {
+    padding: rem(60) 0 rem(120);
+  }
+}
+
+.p-contact__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
 .p-contact__img {
   width: 100%;
   position: relative;
+  @include mq(tab) {
+    max-width: rem(580);
+  }
 }
 
 .p-contact__img::before {
@@ -29,4 +45,12 @@
 .p-contact__text,
 .p-contact__btn {
   margin-top: rem(30);
+}
+
+.p-contact__body {
+  @include mq(tab) {
+    max-width: rem(440);
+    width: 100%;
+    margin-right: rem(80);
+  }
 }

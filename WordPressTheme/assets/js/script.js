@@ -17,6 +17,12 @@ jQuery(function ($) {
 		}
 	});
 
+	$('.js-overlay').on('click', function () {
+		$('.js-drawer-menu').fadeOut();
+		$('.js-overlay').fadeOut();
+		$('.js-hamburger').removeClass('open');
+	});
+
 	// スクロール判定
 	jQuery(window).on("scroll", function() {
 		if (100 < jQuery(this).scrollTop()) {
@@ -36,7 +42,7 @@ jQuery(function ($) {
 
 	/* スムーススクロール */
 	jQuery('a[href^="#"]').click(function() {
-		let header = jQuery(".js-header").height();
+		let header = jQuery(".js-top-header").height();
 		let speed = 300;
 		let id = jQuery(this).attr("href");
 		let target = jQuery("#" == id ? "html" : id);
@@ -65,4 +71,35 @@ jQuery(function ($) {
 				e.preventDefault();
 			});
 	}
+
+	// ヘッダーmv過ぎたら背景色を付与する
+	let header = $('.js-top-header');
+	let headerHeight = $('.js-top-header').outerHeight();//ヘッダーコンテンツ
+	let imgHeight = $('.js-mv').outerHeight() - headerHeight;//画像の高さ取得、これが発火位置になる
+
+	$(window).on('load scroll', function(){
+		if ($(window).scrollTop() < imgHeight) {
+			//メインビジュアル内にいるのでクラスを外す
+			header.removeClass('headerColor');
+		} else {
+			//メインビジュアル下までスクロールしたのでクラスを付けて色を変える
+			header.addClass('headerColor');
+		}
+	});
+
+	// ヘッダーmv過ぎたら背景色を付与する
+	let subHeader = $('.js-sub-header');
+	let headerHeightSub = $('.js-sub-header').outerHeight();//ヘッダーコンテンツ
+	let imgHeightSub = $('.js-sub-mv').outerHeight() - headerHeightSub;//画像の高さ取得、これが発火位置になる
+
+	$(window).on('load scroll', function(){
+		if ($(window).scrollTop() < imgHeightSub) {
+			//メインビジュアル内にいるのでクラスを外す
+			subHeader.removeClass('headerColor');
+		} else {
+			//メインビジュアル下までスクロールしたのでクラスを付けて色を変える
+			subHeader.addClass('headerColor');
+		}
+	});
+
 });

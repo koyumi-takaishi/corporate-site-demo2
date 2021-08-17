@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="l-mv p-mv">
+<div class="l-mv p-mv js-mv">
   <picture class="p-mv__img">
     <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/kv-img.jpg" media="(min-width: 768px)"/>
     <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/kv-img-sp.jpg" alt="">
@@ -9,7 +9,6 @@
     <span class="p-mv__subtitle">デザインで人を笑顔にする会社</span>
     <span class="p-mv__subtitle--en">DIGSMILE INC.</span>
     <h2 class="p-mv__title">DESIGN<br>FOR<br>SMILE.</h2>
-
   </div>
 </div>
 
@@ -87,17 +86,19 @@
 
 <section class="l-contact p-contact">
   <div class="l-inner">
-    <div class="p-contact__img">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/contact-img.jpg" alt="">
-    </div>
-    <div class="p-contact__body">
-      <h2 class="c-section-title">contact</h2>
-      <div class="p-contact__text">
-        <p class="c-text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。</p>
-        <p class="c-text">まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+    <div class="p-contact__wrapper">
+      <div class="p-contact__img">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/contact-img.jpg" alt="">
       </div>
-      <div class="p-contact__btn">
-        <a href="#" class="c-btn">read more</a>
+      <div class="p-contact__body">
+        <h2 class="c-section-title">contact</h2>
+        <div class="p-contact__text">
+          <p class="c-text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。</p>
+          <p class="c-text">まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+        </div>
+        <div class="p-contact__btn">
+          <a href="#" class="c-btn">read more</a>
+        </div>
       </div>
     </div>
   </div>

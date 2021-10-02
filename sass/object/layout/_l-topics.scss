@@ -1,6 +1,6 @@
 .l-topics {
   margin-top: rem(40);
-  @include mq(tab) {
+  @include mq(tab){
     margin-top: rem(60);
   }
 }

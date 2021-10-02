@@ -43,7 +43,15 @@ function my_script_init()
 add_action('wp_enqueue_scripts', 'my_script_init');
 
 
-
+//functions.php
+function register_my_menus() {
+  register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+  //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+    'main' => 'メインメニュー',
+    'footer'  => 'フッターメニュー',
+  ) );
+}
+add_action( 'after_setup_theme', 'register_my_menus' );
 
 /**
  * メニューの登録
@@ -149,3 +157,23 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+// wp_nav_menuのliにclass追加
+function add_additional_class_on_li($classes, $item, $args)
+{
+  if (isset($args->add_li_class)) {
+    $classes['class'] = $args->add_li_class;
+  }
+  return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+// wp_nav_menuのaにclass追加
+function add_additional_class_on_a($classes, $item, $args)
+{
+  if (isset($args->add_li_class)) {
+    $classes['class'] = $args->add_a_class;
+  }
+  return $classes;
+}
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);

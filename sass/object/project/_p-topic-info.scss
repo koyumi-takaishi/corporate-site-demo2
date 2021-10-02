@@ -1,6 +1,6 @@
 .p-topic-info {
   padding-bottom: rem(10);
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #DDD;
 
   & + & {
     margin-top: rem(20);
@@ -8,18 +8,20 @@
 }
 
 .p-topic-info__date,
-.p-topic-info__text {
+.p-topic-info__text{
   display: block;
 }
 
 .p-topic-info__date {
   font-family: $font-family-sub;
   font-size: rem(10);
-  letter-spacing: 0.015;
+  letter-spacing: 0.015em;
   line-height: 1;
   font-weight: 700;
   color: $text-gray;
+
 }
+
 
 .p-topic-info__text {
   margin-top: rem(10);
@@ -28,7 +30,7 @@
   font-weight: 700;
   line-height: (20 / 12);
   letter-spacing: 0.068em;
-  @include mq(tab) {
+  @include mq(tab){
     font-size: rem(14);
   }
 }

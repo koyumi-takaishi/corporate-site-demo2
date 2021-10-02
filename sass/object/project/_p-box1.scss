@@ -9,9 +9,9 @@
 	height: inherit;
 	padding-right: $padding-sp;
 	padding-left: $padding-sp;
-	
+
 	@include mq(tab) {
-		padding: 0;
+    padding: 0;
 	}
 }
 
@@ -22,7 +22,7 @@
 }
 
 .p-box1__img::before {
-  padding-top: 67.2463%; //  (232/345)
+  padding-top: 67.2463768%;// (232/345)
   display: block;
   content: "";
 }

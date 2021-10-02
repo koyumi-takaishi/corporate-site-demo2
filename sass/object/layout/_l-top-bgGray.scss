@@ -1,10 +1,10 @@
 .l-top-bgGray {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
   padding-top: rem(40);
   padding-bottom: rem(40);
   position: relative;
   z-index: -10;
-  @include mq(tab) {
+  @include mq(tab){
     padding-top: rem(180);
     padding-bottom: rem(60);
     margin-top: rem(-100);
@@ -12,7 +12,7 @@
 }
 
 .l-top-bgGray__inner {
-  @include mq(tab) {
+  @include mq(tab){
     display: flex;
     max-width: rem(1140);
     padding: 0 rem(20);

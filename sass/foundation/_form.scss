@@ -1,3 +1,4 @@
+@import "./../setting/variables";
 
 // https://wpqw.jp/snippet/form-reset/
 @charset "utf-8";
@@ -41,7 +42,7 @@ select {
 	margin-right: 0;
 	margin-left: 0;
 	padding: 4px;
-	border: 1px solid #ccc;
+	border: 1px solid $text-border;
 	border-radius: 0;
 	outline: none;
 	background: none;
@@ -102,24 +103,18 @@ input[type="radio"] + span,
 input[type="checkbox"] + span {
 	display: inline-block;
 	position: relative;
-	margin-left: 8px;
-	padding: 10px 20px;
-	color: #555;
-	font-size: 1.4rem;
-	text-align: center;
-	line-height: 1;
+	// margin-left: 8px;
+	color: $text-color;
 	cursor: pointer;
 }
 input[type="radio"] + span::before,
 input[type="checkbox"] + span::before {
 	position: absolute;
-	top: 50%;
-	left: -8px;
+	left: 0;
 	width: 16px;
 	height: 16px;
 	content: "";
-	margin-top: -8px;
-	border: 1px solid #ccc;
+	border: 1px solid $check_background;
 	background: #fff;
 }
 
@@ -133,7 +128,6 @@ legend {
 }
 
 /* button */
-input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
@@ -213,55 +207,38 @@ input[type="radio"] + span:hover::before,
 input[type="checkbox"] + span:hover::before {
 	border-color: #000;
 }
-input[type="radio"] + span:hover::after,
-input[type="checkbox"] + span:hover::after {
+input[type="radio"] + span:hover::after {
 	position: absolute;
 	content: "";
 	top: 50%;
-	left: -4px;
+	left: 4px;
 	width: 8px;
 	height: 8px;
-	margin-top: -4px;
-	background: #ccc;
+	background: $check_background;
 }
 
 /* checked */
-input[type="radio"]:checked + span,
-input[type="checkbox"]:checked + span {
-	color: #3498db;
-}
-input[type="radio"]:checked + span::before,
-input[type="checkbox"]:checked + span::before {
-	border-color: #3498db;
-}
-input[type="radio"]:checked + span::after,
-input[type="checkbox"]:checked + span::after {
-	position: absolute;
-	content: "";
-	top: 50%;
-	left: -4px;
-	width: 8px;
-	height: 8px;
-	margin-top: -4px;
-	background: #3498db;
-}
+// input[type="radio"]:checked + span,
+// input[type="checkbox"]:checked + span {
+// 	color: #3498db;
+// }
+// input[type="radio"]:checked + span::before,
+// input[type="checkbox"]:checked + span::before {
+// 	border-color: #3498db;
+// }
 
-/* radio */
-input[type="radio"] + span::before,
-input[type="radio"] + span:hover::after,
-input[type="radio"]:checked + span::after {
-	border-radius: 50%;
-}
 
-/* button */
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover {
-	border-color: #3498db;
-	background: #3498db;
-	color: #fff;
-}
+
+
+// /* button */
+// input[type="submit"]:hover,
+// input[type="reset"]:hover,
+// input[type="button"]:hover,
+// button:hover {
+// 	border-color: #3498db;
+// 	background: #3498db;
+// 	color: #fff;
+// }
 
 /* focus */
 input:focus,

@@ -1,3 +1,7 @@
 <?php get_header(); ?>
-404
+
+<div class="l-404">
+  404エラー
+</div>
+
 <?php get_footer(); ?>

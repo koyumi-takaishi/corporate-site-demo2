@@ -1,0 +1,6 @@
+.l-single {
+  margin-top: rem(40);
+  @include mq(tab){
+    margin-top: rem(100);
+  }
+}

@@ -1,0 +1,8 @@
+.l-sub-topics {
+    margin-top: rem(60);
+    padding-bottom: rem(60);
+  @include mq(tab){
+    margin-top: rem(100);
+    padding-bottom: rem(100);
+  }
+}

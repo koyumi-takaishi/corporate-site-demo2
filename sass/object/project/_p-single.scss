@@ -1,0 +1,44 @@
+.p-single__date {
+  display: block;
+  font-family: $font-family-sub;
+  font-size: rem(20);
+  letter-spacing: 0.015em;
+  line-height: 1;
+  font-weight: 700;
+  color: $text-gray;
+  margin-top: rem(20);
+}
+
+.p-single__inner.l-inner {
+  max-width: rem(800);
+}
+.p-single__title {
+  margin-top: rem(30);
+}
+.p-single__body {
+  margin-top: rem(60);
+  min-height: rem(1000);
+
+
+  p {
+    line-height: 2;
+    font-size: rem(16);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

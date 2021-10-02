@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="l-header p-header <?php if(is_front_page()){echo 'js-top-header';} else {echo 'js-sub-header';} ?>">
+  <header class="l-header p-header <?php if(is_front_page()){ echo 'js-top-header' ;} else {echo 'js-sub-header';}?>">
     <div class="p-header__inner">
-      <div class="p-header__logo">
-        <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/site-logo.svg" alt="タイトルロゴ">
-      </div>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="p-header__logo">
+        <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="タイトルロゴ">
+      </a>
       <div class="p-header__drawer c-hamburger js-hamburger">
         <span></span>
         <span></span>
@@ -28,9 +28,24 @@
       <div class="p-header__overlay js-overlay"></div>
       <div class="p-header__menu p-drawer-menu js-drawer-menu">
         <div class="p-drawer-menu__logo">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-menu.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-menu.svg" alt="タイトルロゴ">
         </div>
-        <ul class="p-drawer-menu__items">
+
+
+        <?php
+          $defaults = array(
+            'theme_location'  => 'main',
+            'depth' => 1,
+            'container'       => 'nav',
+            'container_class' => 'menu-nav',
+            'menu_class'      => 'p-drawer-menu__items',
+            'add_li_class'    => 'p-drawer-menu__item', // liタグへclass追加
+          );
+          wp_nav_menu( $defaults );
+          ?>
+
+
+        <!-- <ul class="p-drawer-menu__items">
           <li class="p-drawer-menu__item">
             <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">about us</a>
           </li>
@@ -46,7 +61,7 @@
           <li class="p-drawer-menu__item">
             <a href="">contact</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </header>

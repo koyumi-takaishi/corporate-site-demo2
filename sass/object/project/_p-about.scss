@@ -1,58 +1,61 @@
 .p-about {
-  
 }
 
 .p-about__inner::after {
   position: absolute;
   content: "";
-  background-color:rgba($color: #000000, $alpha: 0.16);
   width: 100%;
   height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.16);
   top: 0;
   left: 0;
   z-index: -2;
-} 
+}
 
 .p-about__inner {
   padding-top: rem(50);
   padding-bottom: rem(50);
-  max-width: 1000px;
-  padding-right: $padding-pc;
-  padding-left: $padding-pc;
-  background: url(./../img/common/top-about.jpg);
-  background-size: cover;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+  background-image: url(./../img/common/top-about.jpg);
   background-position: center;
+  background-size: cover;
   position: relative;
-  z-index: -1;
-  @include mq(tab) {
+  z-index: 1;
+  @include mq(tab){
     padding-left: rem(50);
     padding-top: rem(110);
     padding-bottom: rem(110);
     max-width: initial;
   }
+
 }
 
 .p-about__content {
-  background-color:rgba($color: #fff, $alpha: 0.95);
+  background-color: rgba($color: #fff, $alpha: 0.95);
   padding: rem(50) rem(15) rem(50) rem(30);
-  @include mq(tab) {
+  max-width: rem(540);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(tab){
     max-width: rem(590);
     width: 100%;
     margin-right: auto;
+    margin-left: initial;
     padding: rem(50) rem(30);
   }
-}
-
-.p-about__box {
-  margin-top: rem(30);
 }
 
 .p-about__text {
   line-height: 2;
   font-size: rem(14);
-  @include mq(tab) {
+  @include mq(tab){
     font-size: rem(16);
   }
+}
+
+.p-about__box {
+  margin-top: rem(30);
 }
 
 .p-about__btn {

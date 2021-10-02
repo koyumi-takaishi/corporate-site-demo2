@@ -2,8 +2,8 @@
   position: relative;
   z-index: -2;
   padding: rem(40) 0;
-  background-color: #f2f2f2;
-  @include mq(tab) {
+  background-color: #F2F2F2;
+  @include mq(tab){
     padding: rem(60) 0 rem(120);
   }
 }
@@ -13,19 +13,18 @@
   flex-direction: row-reverse;
   align-items: center;
   position: relative;
-  z-index: -1;
-}
 
+}
 .p-contact__img {
   width: 100%;
   position: relative;
-  @include mq(tab) {
+  @include mq(tab){
     max-width: rem(580);
   }
 }
 
 .p-contact__img::before {
-  padding-top: 67.2463%; //  (232/345)
+  padding-top: 67.2463768%;// (232/345)
   display: block;
   content: "";
 }
@@ -48,7 +47,7 @@
 }
 
 .p-contact__body {
-  @include mq(tab) {
+  @include mq(tab){
     max-width: rem(440);
     width: 100%;
     margin-right: rem(80);

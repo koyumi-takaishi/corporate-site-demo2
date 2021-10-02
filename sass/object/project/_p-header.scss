@@ -4,7 +4,7 @@
 }
 
 .p-header.headerColor {
-	background-color: #000;
+	background: #000;
 	padding-bottom: rem(20);
 }
 
@@ -13,6 +13,7 @@
 }
 
 .p-header__logo {
+	display: block;
 	width: rem(189);
 	height: auto;
 }
@@ -42,6 +43,7 @@
 	right: 0;
 	overflow: scroll;
 	padding-bottom: rem(100);
+	z-index: 100;
 }
 
 .p-header__overlay {

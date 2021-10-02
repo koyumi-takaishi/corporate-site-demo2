@@ -5,6 +5,9 @@
 .p-message__img {
   width: rem(340);
   margin-right: auto;
+  @include mq(tab){
+    width: rem(420);
+  }
 }
 
 .p-message__content {
@@ -13,15 +16,34 @@
 
 .p-message__text {
   font-size: rem(14);
+  font-weight: 400;
   line-height: 2;
 }
 
-.p-message__text:nth-child(n + 2) {
+.p-message__text:nth-child(n + 2){
   margin-top: rem(28);
 }
 
+
 .p-message__wrapper {
   padding: rem(126) rem(28) rem(80);
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
   margin-top: rem(-100);
+  @include mq(tab){
+    max-width: rem(770);
+    margin-left: auto;
+    padding: rem(120) rem(185) rem(90);
+  }
+}
+
+
+.p-message__inner {
+  @include mq(tab){
+  margin: 0 auto;
+	width: 100%;
+	height: inherit;
+  max-width: $l-inner + strip-unit($padding-pc) * 2;
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  }
 }

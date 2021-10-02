@@ -1,14 +1,14 @@
 // 色
 $background: #fff; // 背景
 $text-color: #333; // テキスト色
-$text-gray: #cecece; // テキスト色
+$text-gray: #CECECE; // テキスト色
 
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: 'Noto Sans JP', sans-serif;
-$font-family-sub: 'Montserrat', sans-serif;
+$font-family-base: "Noto Sans JP", sans-serif; // ベースフォントサイズ
+$font-family-sub: "Montserrat", sans-serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
@@ -26,8 +26,12 @@ $breakpoints: (
 	"tab": "screen and (min-width: #{$l-tab})",
 	"pc": "screen and (min-width: #{$l-inner})",
 	"lg": "screen and (min-width: #{$l-pc})",
-
 );
 
 $padding-pc: 25px; // タブレット時の余白
 $padding-sp: 15px; // スマホ時の余白
+
+// ラジオボタン
+$check_background: #333;
+// input text
+$text-border: #333;

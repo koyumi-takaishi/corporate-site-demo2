@@ -17,7 +17,7 @@
 .p-explain__header {
   max-width: rem(80);
   width: 100%;
-  @include mq(md) {
+  @include mq(tab) {
     font-weight: bold;
   }
 }

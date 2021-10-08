@@ -14,14 +14,12 @@
   letter-spacing: 0.04em;
 }
 
-
-
-
-
 .p-explain__header {
   max-width: rem(80);
   width: 100%;
-
+  @include mq(md) {
+    font-weight: bold;
+  }
 }
 
 .p-explain__description {

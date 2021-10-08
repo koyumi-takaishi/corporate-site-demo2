@@ -31,7 +31,7 @@
       </div>
       <?php endwhile; ?>
       <?php else: ?>
-      投稿無いよー
+      投稿がありません
       <?php endif; ?>
 
     </div>

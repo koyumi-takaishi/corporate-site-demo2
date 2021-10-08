@@ -26,11 +26,10 @@ $contact = esc_url( home_url( '/contact/' ) );
 <section class="l-top-about p-about">
   <div class="p-about__inner">
     <div class="p-about__content">
-      <h2 class="c-section-title">about us</h2>
+
+      <h2 class="c-section-title"><?php the_field('about_title'); ?></h2>
       <div class="p-about__box">
-        <p class="p-about__text">DIGSMILEは、デザインで人を笑顔にする会社。</p>
-        <p class="p-about__text">なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。</p>
-        <p class="p-about__text">DIGSMILEの社名にはそんな想いが込められています。</p>
+        <p class="p-about__text"><?php the_field('about_description'); ?></p>
       </div>
       <div class="p-about__btn">
         <a href="<?php echo $about ?>" class="c-btn">read more</a>
@@ -116,10 +115,9 @@ $contact = esc_url( home_url( '/contact/' ) );
         <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/contact.jpg" alt="お問い合わせ画像">
       </div>
       <div class="p-contact__body">
-        <h2 class="c-section-title">contact</h2>
+        <h2 class="c-section-title"><?php the_field('contact_title'); ?></h2>
         <div class="p-contact__text">
-          <p class="c-text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。</p>
-          <p class="c-text">まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+          <p class="c-text"><?php the_field('contact_description'); ?></p>
           <div class="p-contact__btn">
             <a href="<?php echo $contact ?>" class="c-btn">read more</a>
           </div>

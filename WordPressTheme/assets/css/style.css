@@ -1228,6 +1228,7 @@ summary {
 }
 
 .p-explain__header {
+	font-weight: bold;
 	max-width: 5rem;
 	width: 100%;
 }

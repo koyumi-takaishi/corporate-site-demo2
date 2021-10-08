@@ -56,30 +56,18 @@
     <h2 class="c-section-title">company</h2>
     <div class="p-company__wrapper">
       <dl class="p-company__info p-explain">
+
+        <?php
+        $info = SCF::get('information');
+        foreach ($info as $detail ) { ?>
+
         <div class="p-explain__block">
-          <dt class="p-explain__header">社名</dt>
-          <dd class="p-explain__description">株式会社DIGSMILE</dd>
+          <dt class="p-explain__header"><?php echo $detail['info-title']; ?></dt>
+          <dd class="p-explain__description"><?php echo $detail['info-text']; ?></dd>
         </div>
-        <div class="p-explain__block">
-          <dt class="p-explain__header">代表取締役</dt>
-          <dd class="p-explain__description">テイラー・スウィフト</dd>
-        </div>
-        <div class="p-explain__block">
-          <dt class="p-explain__header">設立</dt>
-          <dd class="p-explain__description">2020年1月1日</dd>
-        </div>
-        <div class="p-explain__block">
-          <dt class="p-explain__header">資本金</dt>
-          <dd class="p-explain__description">1億円</dd>
-        </div>
-        <div class="p-explain__block">
-          <dt class="p-explain__header">所在地</dt>
-          <dd class="p-explain__description">東京都新宿区☓☓0-0-0</dd>
-        </div>
-        <div class="p-explain__block">
-          <dt class="p-explain__header">電話番号</dt>
-          <dd class="p-explain__description">03-0000-00000</dd>
-        </div>
+        
+        <?php } ?>
+
       </dl>
     </div>
   </div>

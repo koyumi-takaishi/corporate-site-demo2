@@ -41,6 +41,16 @@
     <div class="p-single__body">
       <?php the_content(); ?>
     </div>
+
+    <div class="p-post-links l-post-links">
+      <div class="p-post-links__post-link"><?php previous_post_link('%link', 'PREV'); ?></div>
+      <?php if (is_singular('blog')): ?>
+        <a class="p-post-links__archive-link" href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">一覧</a>
+      <?php else: ?>
+        <a class="p-post-links__archive-link" href="<?php echo esc_url( home_url( '/news/' ) ); ?>">一覧</a>
+      <?php endif; ?>
+      <div class="p-post-links__post-link"><?php previous_post_link('%link', 'NEXT'); ?></div>
+    </div>
     <?php endwhile;?>
     <?php endif; ?>
   </div>

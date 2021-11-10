@@ -578,6 +578,7 @@ summary {
 }
 
 .l-single {
+	margin-bottom: 2.5rem;
 	margin-top: 2.5rem;
 }
 
@@ -595,7 +596,7 @@ summary {
 }
 
 .l-top-bgGray {
-	background-color: #F0F0F0;
+	background-color: #EEEEEE;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
 	position: relative;
@@ -615,8 +616,10 @@ summary {
 }
 
 .c-btn {
-	background-color: #000000;
+	background-color: #00a096;
+	border: 1px solid #fff;
 	color: #fff;
+	cursor: pointer;
 	display: inline-block;
 	font-family: "Montserrat", sans-serif;
 	font-size: 0.6875rem;
@@ -625,6 +628,13 @@ summary {
 	line-height: 1;
 	padding: 0.6875rem 2.75rem;
 	text-transform: uppercase;
+	transition: .3s;
+}
+
+.c-btn:hover {
+	background-color: #fff;
+	border: 1px solid #00a096;
+	color: #00a096;
 }
 
 .c-copy {
@@ -637,6 +647,7 @@ summary {
 }
 
 .c-hamburger {
+	cursor: pointer;
 	z-index: 9999;
 }
 
@@ -679,6 +690,7 @@ summary {
 }
 
 .c-section-title {
+	color: #00a096;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.75rem;
 	font-weight: 800;
@@ -709,7 +721,7 @@ summary {
 }
 
 .p-about__inner {
-	background-image: url(./../img/common/top-about.jpg);
+	background-image: url(./../img/common/works_1.jpg);
 	background-position: center;
 	background-size: cover;
 	padding-bottom: 3.125rem;
@@ -721,7 +733,7 @@ summary {
 }
 
 .p-about__content {
-	background-color: rgba(255, 255, 255, 0.95);
+	background-color: rgba(255, 255, 255, 0.8);
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 33.75rem;
@@ -800,29 +812,7 @@ summary {
 }
 
 .p-contact-button__submit {
-	-webkit-appearance: none;
-	background-color: black;
-	background-image: none;
-	border: none;
-	border-radius: 0;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
 	font-size: 0.875rem;
-	font-weight: bold;
-	margin: 0;
-	padding: 0.6875rem 4.125rem;
-	text-decoration: none;
-}
-
-.p-contact-button__submit:hover,
-.p-contact-button__submit:focus {
-	outline: none;
-}
-
-.p-contact-button__submit::-moz-foucus-inner {
-	border: none;
-	padding: 0;
 }
 
 .p-contact-check__item {
@@ -1151,7 +1141,7 @@ summary {
 }
 
 .p-contact {
-	background-color: #F2F2F2;
+	background-color: #EEEEEE;
 	padding: 2.5rem 0;
 	position: relative;
 	z-index: -2;
@@ -1195,7 +1185,7 @@ summary {
 }
 
 .p-drawer-menu {
-	background-color: rgba(34, 34, 34, 0.95);
+	background-color: rgba(0, 160, 150, 0.95);
 	display: none;
 	height: 100vh;
 	margin-left: auto;
@@ -1254,7 +1244,7 @@ summary {
 }
 
 .p-footer {
-	background-color: #525252;
+	background-color: #00a096;
 	line-height: 1;
 	padding: 1.25rem 0;
 	text-align: center;
@@ -1266,7 +1256,7 @@ summary {
 }
 
 .p-header.headerColor {
-	background: #000;
+	background: #00a096;
 	padding-bottom: 1.25rem;
 }
 
@@ -1275,15 +1265,19 @@ summary {
 }
 
 .p-header__logo {
+	color: #fff;
 	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 800;
 	height: auto;
 	width: 11.8125rem;
 }
 
 .p-header__drawer {
 	position: absolute;
-	right: 3.375rem;
-	top: 1.25rem;
+	right: 54px;
+	top: 1.875rem;
 }
 
 .p-header__menuText {
@@ -1292,15 +1286,14 @@ summary {
 	font-size: 0.625rem;
 	font-weight: 800;
 	position: absolute;
-	right: 0.875rem;
+	right: 14px;
 	text-transform: uppercase;
-	top: 1.25rem;
+	top: 1.875rem;
 	z-index: 9999;
 }
 
 .p-header__menu {
 	left: 0;
-	overflow: scroll;
 	padding-bottom: 6.25rem;
 	position: absolute;
 	right: 0;
@@ -1366,7 +1359,7 @@ summary {
 }
 
 .p-message__wrapper {
-	background-color: #F0F0F0;
+	background-color: #EEEEEE;
 	margin-top: -6.25rem;
 	padding: 7.875rem 1.75rem 5rem;
 }
@@ -1378,7 +1371,7 @@ summary {
 }
 
 .p-mv::after {
-	background: #222;
+	background: #00a096;
 	content: "";
 	height: 100vh;
 	position: absolute;
@@ -1400,16 +1393,6 @@ summary {
 	top: 0;
 	width: 76.5%;
 	z-index: -9;
-}
-
-.p-mv__img::before {
-	background-color: rgba(0, 0, 0, 0.34);
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 .p-mv__img img {
@@ -1454,6 +1437,28 @@ summary {
 	margin-top: 0.625rem;
 }
 
+.p-post-links {
+	text-align: center;
+}
+
+.p-post-links__post-link {
+	display: inline-block;
+}
+
+.p-post-links__archive-link,
+.p-post-links__post-link a {
+	background-color: #00a096;
+	border: 1px solid #00a096;
+	color: #fff;
+	display: inline-block;
+	padding: 0 0.75rem;
+	transition: .3s;
+}
+
+.p-post-links__archive-link {
+	margin: 0 3rem;
+}
+
 .p-privacy-policy {
 	background-color: #fff;
 	border: 1px solid #333;
@@ -1474,7 +1479,7 @@ summary {
 }
 
 .p-single__date {
-	color: #CECECE;
+	color: #888;
 	display: block;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.25rem;
@@ -1498,7 +1503,7 @@ summary {
 
 .p-single__body {
 	margin-top: 3.75rem;
-	min-height: 62.5rem;
+	min-height: 18.75rem;
 }
 
 .p-single__body p {
@@ -1538,7 +1543,7 @@ summary {
 }
 
 .p-sub-contact__required {
-	background-color: #333;
+	background-color: #00a096;
 	color: #fff;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -1560,7 +1565,7 @@ summary {
 }
 
 .p-sub-mv::after {
-	background: #222;
+	background: #00a096;
 	content: "";
 	height: 28.0625rem;
 	position: absolute;
@@ -1582,16 +1587,6 @@ summary {
 	top: 0;
 	width: 76.5%;
 	z-index: -9;
-}
-
-.p-sub-mv__img::before {
-	background-color: rgba(0, 0, 0, 0.34);
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 .p-sub-mv__img img {
@@ -1647,7 +1642,7 @@ summary {
 }
 
 .p-topic-info__date {
-	color: #CECECE;
+	color: #888;
 	font-family: "Montserrat", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 700;
@@ -1706,8 +1701,8 @@ summary {
 
 .wp-pagenavi a,
 .wp-pagenavi span {
-	background-color: #1C181A;
-	border: 1px solid #1C181A;
+	background-color: #00a096;
+	border: 1px solid #00a096;
 	border-radius: 3px;
 	color: #fff;
 	margin: 0 2px;
@@ -1783,6 +1778,7 @@ html {
 }
 
 .l-single {
+	margin-bottom: 6.25rem;
 	margin-top: 6.25rem;
 }
 
@@ -1947,6 +1943,13 @@ html {
 
 .p-mv__title {
 	font-size: 4.5rem;
+}
+
+.p-post-links__archive-link:hover,
+.p-post-links__post-link a:hover {
+	background-color: #fff;
+	border: 1px solid #00a096;
+	color: #00a096;
 }
 
 .p-privacy-policy__text {

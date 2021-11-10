@@ -2,12 +2,12 @@
 
 <div class="l-mv p-sub-mv js-sub-mv">
   <picture class="p-sub-mv__img">
-    <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/about/img_about-pc.jpg" media="(min-width: 768px)" />
-    <img src="<?php echo get_template_directory_uri() ?>/assets/img/about/img_about-sp.jpg" alt="">
+    <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/about/img_about.jpg" media="(min-width: 768px)" />
+    <img src="<?php echo get_template_directory_uri() ?>/assets/img/about/img_about.jpg" alt="">
   </picture>
   <div class="p-sub-mv__block">
     <h2 class="p-sub-mv__title">ABOUT US</h2>
-    <span class="p-sub-mv__subtitle">DIGSMILEについて</span>
+    <span class="p-sub-mv__subtitle">ENJOY inc.について</span>
   </div>
 </div>
 
@@ -15,14 +15,14 @@
   <div class="p-vision__inner l-inner">
     <h2 class="c-section-title">vision</h2>
     <div class="p-vision__content">
-      <h3 class="p-vision__subtitle">デザインで人を笑顔にする会社</h3>
+      <h3 class="p-vision__subtitle">タイトルが入ります。</h3>
       <div class="p-vision__box">
-        <p class="p-vision__text">私達のデザインで人が笑顔になる。</p>
-        <p class="p-vision__text">そんなデザインを目指しています。</p>
-        <p class="p-vision__text">私達が考える人を笑顔にできるデザインとは、<br>デザインが課題を適切に解決ができているかどうか。</p>
-        <p class="p-vision__text">ビジュアルだけではなく、<br>本当に求められているものは何かを考え抜いて、<br>デザインしていきたい。</p>
-        <p class="p-vision__text">誰かの幸せを創ることも、<br>世界の常識を変えていくことだってできる。</p>
-        <p class="p-vision__text">私達はデザインの力を信じています。</p>
+        <p class="p-vision__text">テキストが入ります。テキストが入ります。</p>
+        <p class="p-vision__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="p-vision__text">テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。</p>
+        <p class="p-vision__text">テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。<br>テキストが入ります。</p>
+        <p class="p-vision__text">テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。</p>
+        <p class="p-vision__text">テキストが入ります。</p>
       </div>
     </div>
   </div>
@@ -40,12 +40,12 @@
     <div class="p-message__wrapper">
       <h2 class="c-section-title">CEO MESSAGE</h2>
       <div class="p-message__content">
-        <p class="p-message__text">良いデザインは人を幸せにする。</p>
-        <p class="p-message__text">私達はそう信じています。</p>
-        <p class="p-message__text">デザインを通して、ビジネスの課題とユーザーの課題を解決することで、世の中を幸せにしていきたい。</p>
-        <p class="p-message__text">現在はあらゆるプロダクトがデジタル化されており、デザイナーに対する需要はますます高まっています。それとともに、期待される役割も幅広くなりつつあります。</p>
-        <p class="p-message__text">クリエイティブで社会の可能性を切り開いていく。</p>
-        <p class="p-message__text">変化の激しい現代、私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。</p>
+        <p class="p-message__text">テキストが入ります。</p>
+        <p class="p-message__text">テキストが入ります。テキストが入ります。</p>
+        <p class="p-message__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="p-message__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="p-message__text">テキストが入ります。テキストが入ります。</p>
+        <p class="p-message__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
       </div>
     </div>
   </div>

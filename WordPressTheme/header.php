@@ -15,7 +15,7 @@
   <header class="l-header p-header <?php if(is_front_page()){ echo 'js-top-header' ;} else {echo 'js-sub-header';}?>">
     <div class="p-header__inner">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="p-header__logo">
-        <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="タイトルロゴ">
+        ENJOY inc.
       </a>
       <div class="p-header__drawer c-hamburger js-hamburger">
         <span></span>
@@ -44,24 +44,6 @@
           wp_nav_menu( $defaults );
           ?>
 
-
-        <!-- <ul class="p-drawer-menu__items">
-          <li class="p-drawer-menu__item">
-            <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">about us</a>
-          </li>
-          <li class="p-drawer-menu__item">
-            <a href="">works</a>
-          </li>
-          <li class="p-drawer-menu__item">
-            <a href="">culture</a>
-          </li>
-          <li class="p-drawer-menu__item">
-            <a href="">topics</a>
-          </li>
-          <li class="p-drawer-menu__item">
-            <a href="">contact</a>
-          </li>
-        </ul> -->
       </div>
     </div>
   </header>

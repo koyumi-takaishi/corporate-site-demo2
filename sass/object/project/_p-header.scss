@@ -4,7 +4,7 @@
 }
 
 .p-header.headerColor {
-	background: #000;
+	background: $accent;
 	padding-bottom: rem(20);
 }
 
@@ -16,18 +16,22 @@
 	display: block;
 	width: rem(189);
 	height: auto;
+	font-weight: 800;
+	font-family: $font-family-sub;
+	font-size: rem(20);
+	color: #fff;
 }
 
 .p-header__drawer {
 	position: absolute;
-	right: rem(54);
-	top: rem(20);
+	right: 54px;
+	top: rem(30);
 }
 
 .p-header__menuText {
 	position: absolute;
-	right: rem(14);
-	top: rem(20);
+	right: 14px;
+	top: rem(30);
 	font-family: $font-family-sub;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -41,7 +45,6 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	overflow: scroll;
 	padding-bottom: rem(100);
 	z-index: 100;
 }

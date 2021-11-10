@@ -5,8 +5,8 @@
 }
 .wp-pagenavi a, .wp-pagenavi span {
 	color: #fff;
-	background-color: #1C181A;
-	border: 1px solid #1C181A;
+	background-color: $accent;
+	border: 1px solid $accent;
 	padding: 8px 15px;
 	margin: 0 2px;
 	white-space: nowrap;

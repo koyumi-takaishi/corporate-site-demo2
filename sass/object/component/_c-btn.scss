@@ -4,9 +4,18 @@
   letter-spacing: 0.015em;
   line-height: 1;
   font-weight: 500;
-  background-color: #000000;
+  background-color: $accent;
   padding: rem(11) rem(44);
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
+  border: 1px solid #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.c-btn:hover {
+  border: 1px solid $accent;
+  background-color: #fff;
+  color: $accent;
 }
